@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.0/build/css/intlTelInput.css" />
+
+  <script src="https://kit.fontawesome.com/2dd9a30273.js" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900,700,300,100" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/1.4.57/css/materialdesignicons.min.css" />
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css" />
+  <title>Главная || Северяночка</title>
+  <link rel="stylesheet" href="../css/home.min.css" />
+</head>
+
+<body>
+
+
+
+  <header class="header">
+    <!-- modal start -->
+
+    <!-- modal end -->
+    <div class="container">
+      <nav class="header__nav">
+        <a id="logo" class="logo" href="../pages/home.html"><img src="../assets/images/Home/logo-min.svg"
+            alt="Logo" /></a>
+        <a class="logo_tablet" href="../pages/home.html"><img src="../assets/images/Home/logo-tablet.svg"
+            alt="logo" /></a>
+        <div class="header__nav_search">
+          <div class="wrapperr">
+            <button class="catalog confetti-button">
+              <img onclick="toggleDropdown()" id="menuIcon" src="../assets/images/Home/menu-min.svg" alt="menu" /><a
+                href="../pages/category.html" class="text_katalog">Каталог</a>
+            </button>
+          </div>
+          <div class="search">
+            <input id="searchInput" class="search_input" type="text" placeholder="Найти товар" />
+
+            <img class="search_icon" src="../assets/images/Home/search.svg" alt="search icon" />
+            <div class="search_result"></div>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <a href="favourite.html"><img class="invert" src="../assets/images/Home/like-min.svg"
+                alt="like" />Избранное</a>
+          </li>
+          <li>
+            <a href="../pages/products.html"><img src="../assets/images/Home/product-min.svg"
+                alt="product-min" />продукты</a>
+          </li>
+          <li>
+            <a class="counts_parent" href="cart.html"><img src="../assets/images/Home/shopping-cart.svg"
+                alt="shop cart" />Корзина</a>
+          </li>
+        </ul>
+        <a onclick="" href="#" id="user-button" class="user">
+          <img width="40px" height="40px" id="profile-image" style="border-radius: 50%;"
+            src="../assets/images/Home/aleksiy.png" alt="user" />
+          <p id="username" class="user_info">SIGN IN</p>
+
+        </a>
+      </nav>
+    </div>
+  </header>
+  <div id="dropdown-content">
+    <div class="container">
+      <div class="dropdown_box">
+        <ul class="grid-item">
+          <li>
+            <a class="grid-itemm" href="#">Молоко, сыр, яйцо</a>
+          </li>
+          <li><a class="grid-itemm" href="#">Хлеб</a></li>
+          <li><a class="grid-itemm" href="#">Фрукты и овощи</a></li>
+          <li>
+            <a class="grid-itemm" href="#">Замороженные продукты</a>
+          </li>
+        </ul>
+        <ul class="second grid-item">
+          <li><a class="grid-itemm" href="#">Напитки</a></li>
+          <li>
+            <a class="grid-itemm" href="#">Кондитерские изделия</a>
+          </li>
+          <li><a class="grid-itemm" href="#">Чай, кофе</a></li>
+        </ul>
+        <ul class="second grid-item">
+          <li><a class="grid-itemm" href="#">Бакалея</a></li>
+          <li><a class="grid-itemm" href="#">Здоровое питание</a></li>
+          <li><a class="grid-itemm" href="#">Зоотовары</a></li>
+        </ul>
+        <ul class="second grid-item">
+          <li>
+            <a class="grid-itemm" href="#">Непродовольственные товары</a>
+          </li>
+          <li><a class="grid-itemm" href="#">Детское питание</a></li>
+          <li>
+            <a class="grid-itemm" href="#">Мясо, птица, колбаса</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- NAVIGATION START -->
+
+  <nav class="footer_navbar">
+    <div class="container">
+      <div class="footer_navbar_fixed">
+        <ul class="footer_nav_list">
+          <li>
+            <a onclick="toggleDropdown()" class="red_hover" href="category.html"><img
+                src="../assets/images/Home/menu-dark.svg" alt="menu" />Каталог</a>
+          </li>
+          <li>
+            <a class="red_hover" href="favourite.html"><img src="../assets/images/Home/like-min.svg"
+                alt="like" />Избранное</a>
+            <span class="fav-counter">0</span>
+          </li>
+          <li>
+            <a class="red_hover" href="products.html"><img src="../assets/images/Home/product-min.svg"
+                alt="product-min" />продукты</a>
+          </li>
+          <li>
+            <a class="counts_parent red_hover" href="cart.html"><img src="../assets/images/Home/shopping-cart.svg"
+                alt="shop cart" />Корзина</a>
+            <span class="count countt">0</span>
+          </li>
+          <li>
+            <a id="mobile-button" class="mobile-only " href="#"><img src="../assets/images/Home/aleksiy.png"
+                alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- NAVIGATION END -->
+
+
+  <!-- HOME FIRST SECTION START -->
+  <section class="deliver">
+    <div class="container">
+      <div class="deliver__container">
+        <img src="../assets/images/Home/banner-min.svg" alt="fruits" />
+        <h1>Доставка бесплатно от 1000 ₽</h1>
+      </div>
+    </div>
+  </section>
+  <!-- HOME FIRST SECTION START -->
+
+  <!-- HOME SECOND SECTION START -->
+  <section class="discount">
+    <div class="container">
+      <div class="discount__title">
+        <h2>Акции</h2>
+        <a href="products.html">Все продукты
+          <span><img src="../assets/images/Home/arrow-to-right.svg" alt="right arrow" /></span></a>
+      </div>
+
+      <div id="root" class="discount__wrapper owl-carousel owl-theme"></div>
+
+    </div>
+  </section>
+
+  <section class="discount">
+    <div class="container">
+      <div class="discount__title">
+        <h2>Новинки</h2>
+        <a href="products.html">Все продукты
+          <span><img src="../assets/images/Home/arrow-to-right.svg" alt="right arrow" /></span></a>
+      </div>
+      <div id="roots" class="discount__wrapper owl-carousel owl-theme ">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="discount">
+    <div class="container">
+      <div class="discount__title">
+        <h2>Покупали раньше</h2>
+        <a href="products.html">Все продукты
+          <span><img src="../assets/images/Home/arrow-to-right.svg" alt="right arrow" /></span></a>
+      </div>
+      <div id="high-rated" class="discount__wrapper owl-carousel owl-theme">
+      </div>
+    </div>
+  </section>
+  <!-- HOME SECOND SECTION START -->
+
+  <!-- HOME APP SECTION START -->
+  <section class="app">
+    <div class="container">
+      <h2>Специальные предложения</h2>
+      <div id="app_container" class="app__box"></div>
+    </div>
+  </section>
+  <!-- HOME APP SECTION END -->
+
+  <!-- HOME MAP SECTION START -->
+  <section class="map">
+    <div class="container">
+      <h2>Наши магазины</h2>
+      <div class="ap-tab">
+        <ul data-wow-duration="3s" data-wow-delay="0.3s" class="ap-tab-list ap__list__custom">
+          <li class="ap-tab-item">
+            <a class="ap-tab-link" href="#">п.Щельяюр</a>
+          </li>
+          <li class="ap-tab-item">
+            <a class="ap-tab-link" href="#">д.Вертеп</a>
+          </li>
+          <li class="ap-tab-item">
+            <a class="ap-tab-link" href="#">с.Краснобор</a>
+          </li>
+          <li class="ap-tab-item">
+            <a class="ap-tab-link" href="#">д.Диюр</a>
+          </li>
+        </ul>
+      </div>
+      <div class="ap-tab-container">
+        <div class="ap-tab-content">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6026.1946783083295!2d53.40646458142216!3d65.3253615583545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4472340bbf53f20d%3A0x6aaf90d406ef7886!2z0KnQtdC70YzRj9GO0YAsINCg0LXRgdC_LiDQmtC-0LzQuCwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2s!4v1684728376535!5m2!1sru!2s"
+            width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="ap-tab-content">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1736.7077513003953!2d53.192412645376045!3d65.29774983785877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0JLQtdGA0YLQtdC_!5e1!3m2!1sru!2s!4v1684728615935!5m2!1sru!2s"
+            width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="ap-tab-content">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6001.470704085553!2d53.27496127302572!3d65.29456238373866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447235dd2ca590b3%3A0xc633232da326cfaf!2z0JrRgNCw0YHQvdC-0LHQvtGALCDQoNC10YHQvy4g0JrQvtC80LgsINCg0L7RgdGB0LjRjywgMTY5NDcz!5e1!3m2!1sru!2s!4v1684728695614!5m2!1sru!2s"
+            width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="ap-tab-content">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5612.50650659517!2d53.35414658690277!3d65.27599892060442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447235aa69816fb7%3A0x7202220934f2d943!2z0JTQuNGO0YAsINCg0LXRgdC_LiDQmtC-0LzQuCwg0KDQvtGB0YHQuNGPLCAxNjk0NzE!5e1!3m2!1sru!2s!4v1684728734954!5m2!1sru!2s"
+            width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HOME MAP SECTION END -->
+
+  <!-- HOME LAST SECTION START -->
+  <section class="stati">
+    <div class="container">
+      <div class="discount__title">
+        <h2>Статьи</h2>
+        <a href="jobs.html">Все статьи
+          <span><img src="../assets/images/Home/arrow-to-right.svg" alt="right arrow" /></span></a>
+      </div>
+      <div id="stati-root" class="stati__card_box"></div>
+    </div>
+  </section>
+  <!-- HOME LAST SECTION END -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__left">
+        <a href="home.html"><img src="../assets/images/Home/home-card-images/logo-footer.svg" alt="logo" /></a>
+        <li><a href="../pages/about-us.html">О компании</a></li>
+        <li><a href="../pages/contact.html">Контакты</a></li>
+        <li><a href="../pages/jobs.html">Вакансии</a></li>
+        <li><a href="#">Статьи</a></li>
+        <li><a href="#">Политика обработки персональных данных</a></li>
+      </div>
+      <div class="footer__right">
+        <div class="socials">
+          <div class="half">
+            <img src="../assets/images/Home/home-card-images/insta.svg" alt="instagram" />
+            <img src="../assets/images/Home/home-card-images/Vector.svg" alt="vektor" />
+          </div>
+          <div class="rest_half">
+            <img src="../assets/images/Home/home-card-images/facebook.svg" alt="facebook" />
+            <img src="../assets/images/Home/home-card-images/odno.svg" alt="odnoklasniky" />
+          </div>
+        </div>
+        <div class="phone">
+          <span><img src="../assets/images/Home/home-card-images/phone.png" alt="phone" />
+            8 800 777 33 33</span>
+          <span>Дизайн
+            <img src="../assets/images/Home/home-card-images/logo-zasovskiy-small-black.svg" alt="zakaz" /></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- carousel js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- carousel js -->
+  <script src="../javascript/carousel.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/gh/abdulazizcreator/ap-tab/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.0/build/js/intlTelInput.js"></script>
+
+  <script src="../JavaScript/auth.js"></script>
+  <script src="../JavaScript/dropdown.js"></script>
+  <script src="../JavaScript/chat-user.js"></script>
+  <script src="../JavaScript/dark-mode.js"></script>
+
+  <script src="../javascript/const.js"></script>
+  <script src="../JavaScript/products-data.js"></script>
+  <script src="../javascript/utils.js"></script>
+  <script src="../javascript/main.js"></script>
+
+  <script src="../JavaScript/product-search.js"></script>
+  <script src="../JavaScript/home.js"></script>
+
+</body>
+
+</html>

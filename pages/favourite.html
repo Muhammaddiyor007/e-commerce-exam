@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.0/build/css/intlTelInput.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/2dd9a30273.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Все продукты</title>
+    <link rel="stylesheet" href="../css/favourite.min.css"/>
+  </head>
+  <body>
+    
+
+
+   
+
+    <header class="header dark-header">
+      
+      <div class="container">
+        <nav class="header__nav">
+          <a id="logo" class="logo" href="../pages/home.html"
+            ><img src="../assets/images/Home/logo-min.svg" alt="Logo"
+          /></a>
+          <a class="logo_tablet" href="../pages/home.html"
+            ><img src="../assets/images/Home/logo-tablet.svg" alt="logo"
+          /></a>
+          <div class="header__nav_search">
+            <div class="wrapperr">
+              <button class="catalog confetti-button">
+                <img
+                  onclick="toggleDropdown()"
+                  id="menuIcon"
+                  src="../assets/images/Home/menu-min.svg"
+                  alt="menu"
+                /><a href="../pages/category.html" class="text_katalog"
+                  >Каталог</a
+                >
+              </button>
+            </div>
+            <div class="search">
+              <input
+                id="searchInput"
+                class="search_input search__input"
+                type="text"
+                placeholder="Найти товар"
+              />
+              <img
+                class="search_icon"
+                src="../assets/images/Home/search.svg"
+                alt="search icon"
+              />
+              <div class="search_result"></div>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <a href="favourite.html"
+                ><img
+                  src="../assets/images/Home/like-min.svg"
+                  alt="like"
+                />Избранное</a
+              >
+            </li>
+            <li>
+              <a href="products.html"
+                ><img
+                  src="../assets/images/Home/product-min.svg"
+                  alt="product-min"
+                />продукты</a
+              >
+            </li>
+            <li>
+              <a class="counts_parent" href="cart.html"
+                ><img
+                  src="../assets/images/Home/shopping-cart.svg"
+                  alt="shop cart"
+                />Корзина</a
+              >
+            </li>
+          </ul>
+          <a onclick="" href="#" id="user-button" class="user">
+            <img width="40px" height="40px" id="profile-image" style="border-radius: 50%;" src="../assets/images/Home/aleksiy.png" alt="user" />
+            <p id="username" class="user_info">SIGN IN</p>
+            
+          </a>
+        </nav>
+      </div>
+    </header>
+    <div id="dropdown-content">
+      <div class="container">
+        <div id="categoryButtons" class="dropdown_box">
+          <ul class="grid-item">
+            <li>
+              <a data-category="milk" class="grid-itemm" href="#"
+                >Молоко, сыр, яйцо</a
+              >
+            </li>
+            <li>
+              <a data-category="bread" class="grid-itemm" href="#">Хлеб</a>
+            </li>
+            <li>
+              <a data-category="bread" class="grid-itemm" href="#"
+                >Фрукты и овощи</a
+              >
+            </li>
+            <li>
+              <a data-category="bread" class="grid-itemm" href="#"
+                >Замороженные продукты</a
+              >
+            </li>
+          </ul>
+          <ul class="second grid-item">
+            <li><a value="Молоко" class="grid-itemm" href="#">Напитки</a></li>
+            <li>
+              <a value="Молоко" class="grid-itemm" href="#"
+                >Кондитерские изделия</a
+              >
+            </li>
+            <li><a class="grid-itemm" href="#">Чай, кофе</a></li>
+          </ul>
+          <ul class="second grid-item">
+            <li><a class="grid-itemm" href="#">Бакалея</a></li>
+            <li><a class="grid-itemm" href="#">Здоровое питание</a></li>
+            <li><a class="grid-itemm" href="#">Зоотовары</a></li>
+          </ul>
+          <ul class="second grid-item">
+            <li>
+              <a class="grid-itemm" href="#">Непродовольственные товары</a>
+            </li>
+            <li><a class="grid-itemm" href="#">Детское питание</a></li>
+            <li>
+              <a class="grid-itemm" href="#">Мясо, птица, колбаса</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+   
+    </body>
+  </html>
+    
