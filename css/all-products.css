@@ -3501,13 +3501,13 @@ h2 {
   background-color: #ff7182;
   border-color: #ff7182;
   border-radius: 50%;
-  -webkit-transition: .3s ease-out;
-  transition: .3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
 
 .simple-pagination .prev.current,
 .simple-pagination .next.current {
   background: #e04e60;
-  -webkit-transition: .3s ease-out;
-  transition: .3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
