@@ -489,44 +489,8 @@ body {
   }
 }
 
-.chat .telegram {
-  position: relative;
-  -webkit-transition: .3s ease-out;
-  transition: .3s ease-out;
-  right: -4px;
-  -webkit-transform: translateY(125px);
-          transform: translateY(125px);
-  z-index: -1;
-}
-
-.chat .whatsapp {
-  position: relative;
-  -webkit-transform: translateY(60px);
-          transform: translateY(60px);
-  z-index: -1;
-  -webkit-transition: .3s ease-out;
-  transition: .3s ease-out;
-}
-
-.chat .message {
-  -webkit-transition: .3s ease-out;
-  transition: .3s ease-out;
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-}
-
-.chat .messeage_close {
-  position: absolute;
-  top: 129px;
-  opacity: 0.0009;
-  -webkit-transition: .3s ease-out;
-  transition: .3s ease-out;
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-}
-
 .chat .write {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 5px 8px;
   position: relative;
   top: 10px;
@@ -534,8 +498,8 @@ body {
   border-radius: 100px;
   -webkit-box-shadow: 0px 1px 14px 0px rgba(34, 60, 80, 0.2);
           box-shadow: 0px 1px 14px 0px rgba(34, 60, 80, 0.2);
-  -webkit-transition: .3s ease-out;
-  transition: .3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
 
 @media only screen and (max-width: 550px) {
@@ -546,7 +510,7 @@ body {
 
 .chat .join {
   opacity: 0.0009;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 5px 8px;
   position: relative;
   top: -20px;
@@ -554,8 +518,8 @@ body {
   border-radius: 100px;
   -webkit-box-shadow: 0px 1px 14px 0px rgba(34, 60, 80, 0.2);
           box-shadow: 0px 1px 14px 0px rgba(34, 60, 80, 0.2);
-  -webkit-transition: .3s ease-out;
-  transition: .3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
 
 @media only screen and (max-width: 550px) {
@@ -3181,11 +3145,11 @@ body.dark .favourite_container .wrapper .progress {
   width: 100%;
   position: relative;
   padding: 12px 35px;
-  background: #fec195;
+  background: #fff;
   font-size: 17px;
   font-weight: 500;
-  color: #181818;
-  border: 3px solid #fec195;
+  color: #70c05b;
+  border: 3px solid #70c05b;
   border-radius: 8px;
   -webkit-box-shadow: 0 0 0 #fec1958c;
           box-shadow: 0 0 0 #fec1958c;
@@ -3273,8 +3237,9 @@ body.dark .favourite_container .wrapper .progress {
 }
 
 #allproducts .card button:hover {
-  background: transparent;
-  color: #fec195;
+  background: #ff6633;
+  color: #fff;
+  border: 1px solid #ff6633;
   -webkit-box-shadow: 0 0 25px #fec1958c;
           box-shadow: 0 0 25px #fec1958c;
 }
@@ -3491,23 +3456,23 @@ h2 {
   padding: 5px 10px;
   text-decoration: none;
   border: 1px solid #eee;
-  border-radius: 50%;
+  border-radius: 15%;
   -webkit-box-shadow: 0px 0px 10px 0px #eee;
           box-shadow: 0px 0px 10px 0px #eee;
 }
 
 .simple-pagination .current {
   color: #fff;
-  background-color: #ff7182;
-  border-color: #ff7182;
-  border-radius: 50%;
+  background-color: #70c05b;
+  border-color: #70c05b;
+  border-radius: 15%;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
 }
 
 .simple-pagination .prev.current,
 .simple-pagination .next.current {
-  background: #e04e60;
+  background: #70c05b;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
 }

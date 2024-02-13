@@ -195,7 +195,6 @@ function getHighRatedProducts(item) {
                 src="${image}"
                 alt="biscuit"
               />
-              
               <div class="card_body">
                 <div class="price">
                   <p>${price} ₽</p>

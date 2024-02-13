@@ -171,11 +171,11 @@
       width: 100%;
       position: relative;
       padding: 12px 35px;
-      background: #fec195;
+      background: #fff;
       font-size: 17px;
       font-weight: 500;
-      color: #181818;
-      border: 3px solid #fec195;
+      color: #70c05b;
+      border: 3px solid #70c05b;
       border-radius: 8px;
       box-shadow: 0 0 0 #fec1958c;
       transition: all 0.3s ease-in-out;
@@ -249,8 +249,9 @@
     }
 
     button:hover {
-      background: transparent;
-      color: #fec195;
+      background: #ff6633;
+      color: #fff;
+      border: 1px solid #ff6633;
       box-shadow: 0 0 25px #fec1958c;
     }
 
@@ -444,20 +445,20 @@ h2 {
   padding: 5px 10px;
   text-decoration: none;
   border: 1px solid #eee;
-  border-radius: 50%;
+  border-radius: 15%;
   box-shadow: 0px 0px 10px 0px #eee;
 }
 
 .simple-pagination .current {
   color: #fff;
-  background-color: #ff7182;
-  border-color: #ff7182;
-  border-radius: 50%;
+  background-color: #70c05b;
+  border-color: #70c05b;
+  border-radius: 15%;
   transition: 0.3s ease-out;
 }
 
 .simple-pagination .prev.current,
 .simple-pagination .next.current {
-  background: #e04e60;
+  background: #70c05b;
   transition: 0.3s ease-out;
 }
