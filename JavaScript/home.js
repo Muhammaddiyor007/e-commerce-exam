@@ -3,13 +3,13 @@ const app = [
     id: 1,
     title: "Оформите карту «Северяночка»",
     description: "И получайте бонусы при покупке в магазинах и на сайте.",
-    image: "../assets/images/Home/home-card-images/app-card-1.png",
+    image: "/assets/images/Home/home-card-images/app-card-1.png",
   },
   {
     id: 2,
     title: "Покупайте акционные товары",
     description: "И получайте вдвое больше бонусов.",
-    image: "../assets/images/Home/home-card-images/app-card-2.png",
+    image: "/assets/images/Home/home-card-images/app-card-2.png",
   },
 ];
 
@@ -20,21 +20,21 @@ const stati = [
     description: ` Подробная информация о режимах использования масок и перчаток на
       территории магазинов "ЛЕНТА". Информация обновляется каждый будний
       день.`,
-    image: "../assets/images/Home/home-card-images/stati-1.png",
+    image: "/assets/images/Home/home-card-images/stati-1.png",
     date: "05.03.2021",
   },
   {
     id: 2,
     title: "Весеннее настроение для каждой  и праздничных тёплых пожеланий",
     description: ` 8 Марта – это не просто Международный женский день, это ещё день тюльпанов, приятных сюрпризов и праздничных тёплых пожеланий.`,
-    image: "../assets/images/Home/home-card-images/stati-2.png",
+    image: "/assets/images/Home/home-card-images/stati-2.png",
     date: "02.05.2023",
   },
   {
     id: 3,
     title: "ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!",
     description: `Голосуйте за любимые категории, выбирайте категорию-победителя в мобильном приложении и получайте кешбэк 10% баллами в апреле!.`,
-    image: "../assets/images/Home/home-card-images/stati-3.png",
+    image: "/assets/images/Home/home-card-images/stati-3.png",
     date: "22.02.2020",
   },
 ];
@@ -51,7 +51,7 @@ const categories = [
 function getDiscountProducts(item) {
   let { image, description, discount, name, price, id } = item;
   let product = cartProducts.find((el) => el.id === id);
-  let isFavourite = favoriteProducts.find((el) => el.id === id);
+  // let isFavourite = favoriteProducts.find((el) => el.id === id);
   if (item.discount > 0) {
     return `<div id = "all-card-${id}" class="card parent-element">
               <img
@@ -104,7 +104,7 @@ const lastestProducts = products.slice(0, 4);
 function getProductCard(item) {
   let { image, description, price, name, id } = item;
   let product = cartProducts.find((el) => el.id === id);
-  let isFavourite = favoriteProducts.find((el) => el.id === id);
+  // let isFavourite = favoriteProducts.find((el) => el.id === id);
   return `
     <div  id = "all-card" class="card parent-element">
                <img 
@@ -188,7 +188,7 @@ const lastFiveHighestRatedProducts = findLastFiveHighestRatedProducts(products);
 function getHighRatedProducts(item) {
   let { image, description, price, name, id } = item;
   let product = cartProducts.find((el) => el.id === id);
-  let isFavourite = favoriteProducts.find((el) => el.id === id);
+  // let isFavourite = favoriteProducts.find((el) => el.id === id);
 
   return `<div id = "card"  class="card parent-element">
               <img 
@@ -210,7 +210,7 @@ function getHighRatedProducts(item) {
                 </div>
                 ${
                   product
-                    ? `
+                    ? `<button class = "add-to-cart-button btn_main" data-product-id="${id}" onclick = "addToCartLatest(${id})">В корзину
                   </button>`
                     : `<button class = "add-to-cart-button btn_main" data-product-id="${id}" onclick = "addToCartLatest(${id})">В корзину
                     
